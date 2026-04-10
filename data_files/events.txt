@@ -1,0 +1,8 @@
+EV001,Avengers Finale,Movie,Cineplex Downtown,2026-05-10,18:00,500.0,200,197,Epic Marvel conclusion
+EV002,Ed Sheeran Live,Concert,National Stadium,2026-05-15,20:00,85.0,5000,5000,Mathematics World Tour
+EV003,Hamilton Musical,Theater,Grand Theatre,2026-05-20,19:30,65.0,400,400,Award-winning Broadway hit
+EV004,NBA Finals Game 1,Sports,Arena Center,2026-05-22,21:00,120.0,1000,1000,Championship showdown
+EV005,Taylor Swift Eras,Concert,City Amphitheatre,2026-06-01,19:00,150.0,8000,8000,The Eras Tour – Extended
+EV006,Dune: Part Three,Movie,IMAX Galaxy,2026-06-05,17:30,15.0,300,300,The saga continues
+EV007,World Chess Championship,Sports,Convention Hall,2026-06-10,10:00,30.0,500,500,Battle of grandmasters
+EV008,Bonolota Express,Movie,Cineplex Bashundhara,2026-12-10,12:34,400.0,509,509,
