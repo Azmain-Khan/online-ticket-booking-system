@@ -29,7 +29,7 @@ public class LoginPanel extends JPanel {
         card.setMaximumSize(new Dimension(420, 500));
 
         // Logo
-        JLabel logo = new JLabel("🎟  TicketHub", SwingConstants.CENTER);
+        JLabel logo = new JLabel("TicketStore", SwingConstants.CENTER);
         logo.setFont(Theme.FONT_TITLE);
         logo.setForeground(Theme.ACCENT);
         logo.setAlignmentX(Component.CENTER_ALIGNMENT);

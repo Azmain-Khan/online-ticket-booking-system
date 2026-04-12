@@ -49,12 +49,12 @@ public class EventsPanel extends JPanel {
         searchField.setToolTipText("Search by name or location...");
 
         typeFilter = new JComboBox<>(new String[]{"All Types", "Movie", "Concert", "Theater", "Sports"});
-        typeFilter.setBackground(Theme.BG_CARD);
-        typeFilter.setForeground(Theme.TEXT_PRIMARY);
+        typeFilter.setBackground(Theme.BG_DARK);
+        typeFilter.setForeground(Theme.TEXT_MUTED);
         typeFilter.setFont(Theme.FONT_BODY);
         typeFilter.setPreferredSize(new Dimension(140, 34));
 
-        JButton searchBtn = Theme.makeButton("🔍  Search", true);
+        JButton searchBtn = Theme.makeButton("Search", true);
         searchBtn.setPreferredSize(new Dimension(110, 34));
         searchBtn.addActionListener(e -> filterTable());
 
@@ -86,7 +86,7 @@ public class EventsPanel extends JPanel {
         JPanel actions = new JPanel(new FlowLayout(FlowLayout.RIGHT, 10, 0));
         actions.setOpaque(false);
 
-        JButton bookBtn = Theme.makeButton("🎫  Book Selected Event", true);
+        JButton bookBtn = Theme.makeButton("Book Selected Event", true);
         bookBtn.setPreferredSize(new Dimension(200, 38));
         bookBtn.addActionListener(e -> bookSelected());
 

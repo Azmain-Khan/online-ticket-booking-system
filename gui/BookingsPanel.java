@@ -46,7 +46,7 @@ public class BookingsPanel extends JPanel {
 
         // Summary + actions
         summaryLabel = Theme.makeLabel("", Theme.FONT_SMALL, Theme.TEXT_MUTED);
-        JButton cancelBtn = Theme.makeButton("❌  Cancel Booking", false);
+        JButton cancelBtn = Theme.makeButton("Cancel Booking", true);
         cancelBtn.setForeground(Theme.DANGER);
         cancelBtn.addActionListener(e -> cancelSelected());
 

@@ -9,7 +9,8 @@ public class Main {
 
         SwingUtilities.invokeLater(() -> {
             try {
-                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                //UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                UIManager.setLookAndFeel(new javax.swing.plaf.metal.MetalLookAndFeel());
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -17,5 +18,3 @@ public class Main {
         });
     }
 }
-
-// Testing git

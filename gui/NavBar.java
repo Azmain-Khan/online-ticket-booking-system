@@ -13,7 +13,7 @@ public class NavBar extends JPanel {
         setPreferredSize(new Dimension(0, 56));
 
         // Left – logo
-        JLabel logo = new JLabel("  🎟  TicketHub");
+        JLabel logo = new JLabel("  TicketStore");
         logo.setFont(new Font("Segoe UI", Font.BOLD, 20));
         logo.setForeground(Theme.ACCENT);
         add(logo, BorderLayout.WEST);
@@ -31,7 +31,7 @@ public class NavBar extends JPanel {
         // Right – user info + logout
         JPanel right = new JPanel(new FlowLayout(FlowLayout.RIGHT, 12, 12));
         right.setOpaque(false);
-        JLabel user = new JLabel("👤 " + Session.getCurrentUser().getFullName());
+        JLabel user = new JLabel(Session.getCurrentUser().getFullName());
         user.setFont(Theme.FONT_SMALL);
         user.setForeground(Theme.TEXT_MUTED);
         right.add(user);
