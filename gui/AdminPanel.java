@@ -38,17 +38,20 @@ public class AdminPanel extends JPanel {
         content.setBackground(Theme.BG_DARK);
         content.setBorder(BorderFactory.createEmptyBorder(16, 20, 16, 20));
 
-        JLabel title = Theme.makeLabel("⚙  Admin Panel", Theme.FONT_HEADER, Theme.ACCENT);
+        JLabel title = Theme.makeLabel("Admin Panel", Theme.FONT_HEADER, Theme.ACCENT);
 
         tabs = new JTabbedPane();
         tabs.setBackground(Theme.BG_DARK);
         tabs.setForeground(Theme.TEXT_PRIMARY);
         tabs.setFont(Theme.FONT_BODY);
 
-        tabs.addTab("📅  Manage Events",   buildEventsTab());
-        tabs.addTab("📋  All Bookings",    buildBookingsTab());
-        tabs.addTab("📊  Sales Report",    buildReportTab());
-
+        tabs.addTab("Manage Events",   buildEventsTab());
+        tabs.addTab("All Bookings",    buildBookingsTab());
+        tabs.addTab("Sales Report",    buildReportTab());
+        tabs.setBackground(Theme.BG_DARK);
+        tabs.setForeground(Theme.TEXT_MUTED);
+        tabs.setFont(Theme.FONT_BODY);
+       
         content.add(title, BorderLayout.NORTH);
         content.add(tabs,  BorderLayout.CENTER);
         add(content, BorderLayout.CENTER);
@@ -77,9 +80,9 @@ public class AdminPanel extends JPanel {
         JPanel actions = new JPanel(new FlowLayout(FlowLayout.RIGHT, 8, 0));
         actions.setOpaque(false);
 
-        JButton addBtn    = Theme.makeButton("➕ Add Event",    true);
-        JButton editBtn   = Theme.makeButton("✏  Edit Event",   false);
-        JButton deleteBtn = Theme.makeButton("🗑  Delete Event", false);
+        JButton addBtn    = Theme.makeButton("Add Event",    true);
+        JButton editBtn   = Theme.makeButton("Edit Event",   true);
+        JButton deleteBtn = Theme.makeButton("Delete Event", true);
         deleteBtn.setForeground(Theme.DANGER);
 
         addBtn.addActionListener(e    -> showEventDialog(null));
@@ -276,7 +279,7 @@ public class AdminPanel extends JPanel {
         JScrollPane scroll = new JScrollPane(area);
         scroll.setBorder(BorderFactory.createLineBorder(Theme.BORDER));
 
-        JButton refresh = Theme.makeButton("↻  Refresh Report", true);
+        JButton refresh = Theme.makeButton("Refresh Report", true);
         refresh.addActionListener(e -> area.setText(generateReport()));
 
         p.add(scroll,  BorderLayout.CENTER);

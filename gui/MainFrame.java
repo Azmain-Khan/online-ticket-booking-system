@@ -21,7 +21,7 @@ public class MainFrame extends JFrame {
     private AdminPanel    adminPanel;
 
     public MainFrame() {
-        setTitle("🎟  TicketHub – Online Ticket Booking System");
+        setTitle("TicketStore – Online Ticket Booking System");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(1100, 720);
         setMinimumSize(new Dimension(900, 600));
