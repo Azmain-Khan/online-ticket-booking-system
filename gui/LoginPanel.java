@@ -69,11 +69,11 @@ public class LoginPanel extends JPanel {
         card.add(Box.createVerticalStrut(20));
         card.add(sep);
         card.add(Box.createVerticalStrut(24));
-        card.add(makeLabel("Username"));
+        card.add(makeLabel("Username        "));
         card.add(Box.createVerticalStrut(4));
         card.add(usernameField);
         card.add(Box.createVerticalStrut(14));
-        card.add(makeLabel("Password"));
+        card.add(makeLabel("Password        "));
         card.add(Box.createVerticalStrut(4));
         card.add(passwordField);
         card.add(Box.createVerticalStrut(6));
@@ -91,7 +91,7 @@ public class LoginPanel extends JPanel {
 
     private JLabel makeLabel(String text) {
         JLabel l = Theme.makeLabel(text, Theme.FONT_SMALL, Theme.TEXT_MUTED);
-        l.setAlignmentX(Component.LEFT_ALIGNMENT);
+        l.setAlignmentX(Component.RIGHT_ALIGNMENT);
         return l;
     }
 

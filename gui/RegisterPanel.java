@@ -26,7 +26,7 @@ public class RegisterPanel extends JPanel {
                 BorderFactory.createEmptyBorder(36, 50, 36, 50)));
         card.setLayout(new BoxLayout(card, BoxLayout.Y_AXIS));
 
-        JLabel logo = new JLabel("Create Your Account", SwingConstants.CENTER);
+        JLabel logo = new JLabel("Create Your Account  ", SwingConstants.CENTER);
         logo.setFont(Theme.FONT_HEADER);
         logo.setForeground(Theme.ACCENT);
         logo.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -54,10 +54,10 @@ public class RegisterPanel extends JPanel {
 
         card.add(logo);
         card.add(Box.createVerticalStrut(20));
-        addRow(card, "Full Name",        fullNameField);
-        addRow(card, "Username",         usernameField);
-        addRow(card, "Email",            emailField);
-        addRow(card, "Password",         passwordField);
+        addRow(card, "Full Name              ",        fullNameField);
+        addRow(card, "Username              ",         usernameField);
+        addRow(card, "Email                      ",            emailField);
+        addRow(card, "Password              ",         passwordField);
         addRow(card, "Confirm Password", confirmField);
         card.add(Box.createVerticalStrut(4));
         card.add(errorLabel);
@@ -71,7 +71,7 @@ public class RegisterPanel extends JPanel {
 
     private void addRow(JPanel p, String label, JComponent field) {
         JLabel l = Theme.makeLabel(label, Theme.FONT_SMALL, Theme.TEXT_MUTED);
-        l.setAlignmentX(Component.LEFT_ALIGNMENT);
+        l.setAlignmentX(Component.RIGHT_ALIGNMENT);
         p.add(l);
         p.add(Box.createVerticalStrut(4));
         p.add(field);

@@ -38,7 +38,7 @@ public class AdminPanel extends JPanel {
         content.setBackground(Theme.BG_DARK);
         content.setBorder(BorderFactory.createEmptyBorder(16, 20, 16, 20));
 
-        JLabel title = Theme.makeLabel("Admin Panel", Theme.FONT_HEADER, Theme.ACCENT);
+        JLabel title = Theme.makeLabel("Admin Panel", Theme.FONT_HEADER, Theme.TEXT_PRIMARY);
 
         tabs = new JTabbedPane();
         tabs.setBackground(Theme.BG_DARK);
@@ -289,9 +289,9 @@ public class AdminPanel extends JPanel {
 
     private String generateReport() {
         StringBuilder sb = new StringBuilder();
-        sb.append("═══════════════════════════════════════════════════════\n");
+        sb.append("════════════════════════════════════════════════════════════════\n");
         sb.append("          TICKETHUB – SALES REPORT\n");
-        sb.append("═══════════════════════════════════════════════════════\n\n");
+        sb.append("════════════════════════════════════════════════════════════════\n\n");
 
         List<Event> events    = DataManager.loadEvents();
         List<Booking> bookings = DataManager.loadBookings();
@@ -308,12 +308,12 @@ public class AdminPanel extends JPanel {
         sb.append(String.format("  Cancelled        : %d%n", totalCancelled));
         sb.append(String.format("  Total Revenue    : $%.2f%n%n", totalRevenue));
 
-        sb.append("──────────────────────────────────────────────────────\n");
+        sb.append("───────────────────────────────────────────────────────────────\n");
         sb.append("  EVENT BREAKDOWN\n");
-        sb.append("──────────────────────────────────────────────────────\n");
+        sb.append("───────────────────────────────────────────────────────────────\n");
         sb.append(String.format("  %-8s %-24s %6s %8s %10s%n",
                 "ID", "Name", "Sold", "Left", "Revenue"));
-        sb.append("  ─────────────────────────────────────────────────\n");
+        sb.append("───────────────────────────────────────────────────────────────\n");
 
         for (Event e : events) {
             int sold = e.getTotalSeats() - e.getAvailableSeats();
@@ -324,7 +324,7 @@ public class AdminPanel extends JPanel {
                     e.getEventId(), truncate(e.getName(), 24), sold, e.getAvailableSeats(),
                     String.format("$%.2f", rev)));
         }
-        sb.append("\n═══════════════════════════════════════════════════════\n");
+        sb.append("\n════════════════════════════════════════════════════════════════\n");
         return sb.toString();
     }
 
