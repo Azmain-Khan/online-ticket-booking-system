@@ -26,7 +26,7 @@ public class MainFrame extends JFrame {
         setSize(1100, 720);
         setMinimumSize(new Dimension(900, 600));
         setLocationRelativeTo(null);
-        getContentPane().setBackground(Theme.BG_DARK);
+        getContentPane().setBackground(Theme.ACCENT);
 
         cardLayout = new CardLayout();
         mainPanel  = new JPanel(cardLayout);
